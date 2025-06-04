@@ -6,10 +6,34 @@
     <title>Tutoria IMD</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
+  <button id="toTopBtn"
+  class="fixed bottom-5 right-5 bg-blue-800 text-white p-2 rounded-full shadow hover:shadow-lg transition duration-300 hidden">
+  ↑
+  <img src="Logo.png" alt="Voltar ao topo" class="w-10 h-10 object-contain" />
+  </button>
+  <script src="js/scrollToTop.js"></script>
+
+
   <body class="bg-gray-50 text-gray-800">
 
     <!-- Hero Section -->
     <header class="bg-gradient-to-br from-blue-950 to-blue-700 text-white">
+
+      <nav class="bg-transparent text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="text-xl font-bold">
+            <a href="index.html" class="hover:text-blue-200">Tutoria IMD</a>
+          </div>
+          <div class="space-x-4">
+            <a href="#sobre" class="hover:text-blue-200 transition duration-150 ease-in-out">Sobre</a>
+            <a href="#ajuda" class="hover:text-blue-200 transition duration-150 ease-in-out">Ajuda</a>
+            <a href="#eventos" class="hover:text-blue-200 transition duration-150 ease-in-out">Eventos</a>
+            <a href="#contato" class="hover:text-blue-200 transition duration-150 ease-in-out">Contato</a>
+          </div>
+        </div>
+      </nav>
+
       <div class="container mx-auto px-4 text-center">
         <img src="Logo.png" alt="Logo da Tutoria BTI" class="mx-auto w-100 h-100 mb-4" />
       </div>
@@ -17,24 +41,36 @@
 
 
     <!-- Sobre -->
-    <section class="py-16 px-4">
+    <section id="sobre" class="py-16 px-4">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-blue-700 mb-6">O que é o projeto?</h2>
         <p class="text-lg leading-relaxed">
-          A Tutoria é um projeto que busca promover a integração acadêmica e social dos ingressantes do BTI, oferecendo suporte técnico, pedagógico e emocional que facilite a adaptação ao ensino superior e contribua para o sucesso acadêmico e a permanência estudantil.   </section>
+          A Tutoria é um projeto que busca promover a integração acadêmica e social dos ingressantes do BTI, 
+          oferecendo suporte técnico, pedagógico e emocional que facilite a adaptação ao ensino superior e 
+          contribua para o sucesso acadêmico e a permanência estudantil.   
+        </p>
+        <p class="text-lg leading-relaxed">
+          Veja mais:
+          <a href="https://drive.google.com/file/d/10BARb36Meem1-81ZZEF8bDv3PqQF2khM/view?usp=drive_link"
+           target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+          Apresentação do programa
+          </a>
+        </p>
+      </div>
+      </section>
 
     <!-- Atividades -->
-    <section class="py-16 bg-white px-4">
+    <section id="ajuda" class="py-16 bg-white px-4">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">Como podemos te ajudar?</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
-            <h3 class="text-xl font-semibold mb-2">Atendimento</h3>
-            <p>Veja os horários para tirar dúvidas sobre o BTI com os tutores ou envie um email.</p>
+            <a href="atendimento.html" class="text-xl font-semibold mb-2">Atendimento</a>
+            <p>Veja os horários para tirar dúvidas sobre o BTI com os tutores ou faça um agendamento.</p>
           </div>
           <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
-            <h3 class="text-xl font-semibold mb-2">Materiais</h3>
-            <p>Tutorias, guias e mais</p>
+            <a href="materiais.html" class="text-xl font-semibold mb-2">Materiais<a>
+            <p>Tutorias, guias e mais materiais que podem te ajudar.</p>
           </div>
           <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
             <h3 class="text-xl font-semibold mb-2">Ferramentas e dicas</h3>
@@ -45,25 +81,32 @@
     </section>
 
     <!-- Eventos -->
-    <section class="py-16 px-4">
+    <section id="eventos" class="py-16 px-4">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">Eventos</h2>
         <ul class="space-y-4">
           <li class="bg-white p-4 rounded-lg shadow">
-            <strong>dd/mm:</strong> Semana do PES
+            <strong>Em breve:</strong> Amostra do PES
           </li>
         </ul>
       </div>
     </section>
 
     <!-- Contato -->
-    <section class="py-16 bg-white px-4">
+    <section id="contato" class="py-16 bg-white px-4">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-blue-700 mb-6">Entre em contato</h2>
         <p class="mb-4">Quer saber mais ou precisa de ajuda? Fale com a gente!</p>
-        <a href="mailto:tutoria@imd.br" class="inline-block bg-blue-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-full transition">
-          Enviar e-mail
-        </a>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="mailto:tutoria@imd.ufrn.br"
+            class="inline-block bg-blue-600 hover:bg-blue-900 text-white font-semibold py-2 px-6 rounded-full transition">
+            Enviar e-mail
+          </a>
+          <a href="https://discord.gg/" target="_blank"
+            class="inline-block bg-indigo-600 hover:bg-indigo-800 text-white font-semibold py-2 px-6 rounded-full transition">
+            Entrar no Discord
+          </a>
+        </div>
       </div>
     </section>
 
