@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutoria IMD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <button id="toTopBtn"
+  class="fixed bottom-5 right-5 bg-blue-800 text-white p-2 rounded-full shadow hover:shadow-lg transition duration-300 hidden">
+  ↑
+  <img src="Logo.png" alt="Voltar ao topo" class="w-10 h-10 object-contain" />
+  </button>
+  <script src="js/scrollToTop.js"></script>
+
+
+  <body class="bg-gray-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-blue-950 to-blue-700 text-white">
+
+      <nav class="bg-transparent text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="text-xl font-bold">
+            <a href="index.html" class="hover:text-blue-200">Tutoria IMD</a>
+          </div>
+          <div class="space-x-4">
+            <a href="index.html" class="hover:text-blue-200 transition duration-150 ease-in-out">Voltar</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mx-auto px-4 text-center py-8">
+        <h1 class="text-4xl font-bold">Atendimento</h1>
+        <p class="text-lg mt-2">Como falar com a gente e tirar suas dúvidas</p>
+      </div>
+    </header>
+
+    <!-- Horarios -->
+    <section id="horarios" class="py-16 bg-white px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-blue-700 mb-8">Horários de Atendimento</h2>
+          <p class="text-lg mb-4">
+            Local: a definir
+          </p>
+
+          <div class="overflow-x-auto">
+            <table class="min-w-full table-fixed border border-gray-300">
+              <thead class="bg-gray-200">
+                <tr>
+                  <th class="border px-2 py-2 w-16"> </th>
+                  <th class="border px-2 py-2">Segunda</th>
+                  <th class="border px-2 py-2">Terça</th>
+                  <th class="border px-2 py-2">Quarta</th>
+                  <th class="border px-2 py-2">Quinta</th>
+                  <th class="border px-2 py-2">Sexta</th>
+                  <th class="border px-2 py-2">Sábado</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <td class="border px-2 py-2 font-semibold">M12</td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="border px-2 py-2 font-semibold">M34</td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border">Thiago</td>
+                </tr>
+                <tr>
+                  <td class="border px-2 py-2 font-semibold">M56</td>
+                  <td class="border"></td>
+                  <td class="border">Thiago</td>
+                  <td class="border"></td>
+                  <td class="border">Thiago</td>
+                  <td class="border"></td>
+                  <td class="border">Thiago</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="border px-2 py-2 font-semibold">T12</td>
+                  <td class="border"></td>
+                  <td class="border">Thiago</td>
+                  <td class="border"></td>
+                  <td class="border">Thiago</td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                </tr>
+                <tr>
+                  <td class="border px-2 py-2 font-semibold">T34</td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="border px-2 py-2 font-semibold">T56</td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                </tr>
+                <tr>
+                  <td class="border px-2 py-2 font-semibold">N12</td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="border px-2 py-2 font-semibold">N34</td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                  <td class="border"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </section>
+
+    <!-- Info -->
+    <section class="py-16 px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-2xl font-semibold text-blue-700 mb-6">Agendamento</h2>
+          <p class="text-lg mb-4">
+            Você pode entrar em contato com a tutoria por e-mail:
+            <a href="mailto:tutoria@imd.ufrn.br" class="text-blue-600 hover:underline">tutoria@imd.ufrn.br</a>
+          </p>
+        </div>
+    </section>
+       
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-16">
+      <p>Tutoria IMD - 2025</p>
+    </footer>
+  </body>
+</html>
