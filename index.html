@@ -4,82 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tutoria IMD</title>
+    <meta name="description" content="Site da Tutoria do IMD. Apoio técnico, pedagógico e emocional para ingressantes do BTI.">
+    <link rel="icon" href="favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
   </head>
-
-  <button id="toTopBtn"
-  class="fixed bottom-5 right-5 bg-blue-800 text-white p-2 rounded-full shadow hover:shadow-lg transition duration-300 hidden">
-  ↑
-  <img src="Logo.png" alt="Voltar ao topo" class="w-10 h-10 object-contain" />
-  </button>
-  <script src="js/scrollToTop.js"></script>
-
 
   <body class="bg-gray-50 text-gray-800">
 
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-br from-blue-950 to-blue-700 text-white">
+    <!-- Botão Voltar ao Topo -->
+    <button id="toTopBtn"
+      class="fixed bottom-5 right-5 bg-blue-800 text-white p-3 rounded-full shadow hover:shadow-lg hover:scale-110 transition duration-300 hidden z-50"
+      aria-label="Voltar ao topo">
+      ↑
+    </button>
+    <script src="js/scrollToTop.js"></script>
 
-      <nav class="bg-transparent text-white p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex items-center justify-between">
-          <div class="text-xl font-bold">
-            <a href="index.html" class="hover:text-blue-200">Tutoria IMD</a>
+    <div class="bg-gradient-to-br from-blue-950 to-blue-700">
+      <!-- Nav -->
+      <header class="text-white">
+        <nav class="p-4 sticky top-0 z-40">
+          <div class="container mx-auto flex items-center justify-between">
+            <div class="text-xl font-bold">
+              <a href="index.html" class="hover:text-blue-200">Tutoria IMD</a>
+            </div>
+      
+            <!-- Menu de Links -->
+            <div id="menu" class="hidden md:flex space-x-4 flex-col md:flex-row md:items-center bg-blue-900 md:bg-transparent p-4 md:p-0 absolute md:static top-full left-0 w-full md:w-auto z-50">
+              <a href="#sobre" class="hover:text-blue-200 transition duration-150 ease-in-out">Sobre</a>
+              <a href="#ajuda" class="hover:text-blue-200 transition duration-150 ease-in-out">Ajuda</a>
+              <a href="#eventos" class="hover:text-blue-200 transition duration-150 ease-in-out">Eventos</a>
+              <a href="#contato" class="hover:text-blue-200 transition duration-150 ease-in-out">Contato</a>
+              <a href="#formulario" class="hover:text-blue-200 transition duration-150 ease-in-out">Formulário</a>
+            </div>
+
+            <div class="relative md:hidden flex items-center">
+              <!-- Botão do Menu Hambúrguer -->
+              <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-400 hover:bg-white-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="sr-only">Abrir menu principal</span>
+                  <!-- Ícone de hambúrguer -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                  </svg>
+              </button>
+              
+              <!-- Menu Mobile Dropdown -->
+              <div id="mobile-menu" class="hidden absolute top-10 right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button">
+                      <a href="#sobre" class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-sm" role="menuitem">Sobre</a>
+                      <a href="#ajuda" class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-sm" role="menuitem">Ajuda</a>
+                      <a href="#eventos" class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-sm" role="menuitem">Eventos</a>
+                      <a href="#contato" class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-sm" role="menuitem">Contato</a>
+                      <a href="#formulario" class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-sm" role="menuitem">Formulário</a>
+                    </div>
+              </div>
+            </div>
           </div>
-          <div class="space-x-4">
-            <a href="#sobre" class="hover:text-blue-200 transition duration-150 ease-in-out">Sobre</a>
-            <a href="#ajuda" class="hover:text-blue-200 transition duration-150 ease-in-out">Ajuda</a>
-            <a href="#eventos" class="hover:text-blue-200 transition duration-150 ease-in-out">Eventos</a>
-            <a href="#contato" class="hover:text-blue-200 transition duration-150 ease-in-out">Contato</a>
-            <a href="#formulario" class="hover:text-blue-200 transition duration-150 ease-in-out">Formulário</a>
-         </div>
+        </nav>
+      </header><script src="js/navbar.js"></script>
+      
+
+      
+
+      <!-- Sobre  -->
+      <section id="sobre" class="pt-16 pb-16 px-4 text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+          <div class="md:w-1/2 flex justify-center">
+            <img src="logo.png" alt="Logo da Tutoria BTI" class="max-w-sm h-auto drop-shadow-lg" />
+          </div>
+          <div class="md:w-1/2 text-center md:text-left">
+            <h2 class="text-3xl font-bold mb-6">O que é o projeto?</h2>
+            <p class="text-lg leading-relaxed mb-4">
+              A Tutoria é um projeto que busca promover a integração acadêmica e social dos ingressantes do BTI,
+              oferecendo suporte técnico, pedagógico e emocional que facilite a adaptação ao ensino superior e
+              contribua para o sucesso acadêmico e a permanência estudantil.
+            </p>
+            <p>Veja mais:</p>
+            <a href="https://drive.google.com/file/d/10BARb36Meem1-81ZZEF8bDv3PqQF2khM/view?usp=drive_link"
+              target="_blank" class="inline-block text-white underline hover:text-blue-200 transition">
+              Apresentação do programa
+            </a>
+          </div>
         </div>
-      </nav>
-
-      <div class="container mx-auto px-4 text-center">
-        <img src="Logo.png" alt="Logo da Tutoria BTI" class="mx-auto w-100 h-100 mb-4" />
-      </div>
-    </header>
-
-
-    <!-- Sobre -->
-    <section id="sobre" class="py-16 px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-blue-700 mb-6">O que é o projeto?</h2>
-        <p class="text-lg leading-relaxed">
-          A Tutoria é um projeto que busca promover a integração acadêmica e social dos ingressantes do BTI, 
-          oferecendo suporte técnico, pedagógico e emocional que facilite a adaptação ao ensino superior e 
-          contribua para o sucesso acadêmico e a permanência estudantil.   
-        </p>
-        <p class="text-lg leading-relaxed">
-          Veja mais:
-          <a href="https://drive.google.com/file/d/10BARb36Meem1-81ZZEF8bDv3PqQF2khM/view?usp=drive_link"
-           target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
-          Apresentação do programa
-          </a>
-        </p>
-      </div>
       </section>
+    </div>
 
-    <!-- Atividades -->
     <section id="ajuda" class="py-16 bg-white px-4">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">Como podemos te ajudar?</h2>
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card 1 -->
-          <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300 text-center">
+          <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition duration-300 text-center">
             <a href="atendimento.html" class="text-xl font-semibold text-blue-700 mb-2 block">Atendimento</a>
             <p>Veja os horários para tirar dúvidas sobre o BTI com os tutores ou faça um agendamento.</p>
           </div>
 
           <!-- Card 2 -->
-          <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300 text-center">
+          <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition duration-300 text-center">
             <a href="materiais.html" class="text-xl font-semibold text-blue-700 mb-2 block">Materiais</a>
             <p>Tutorias, guias e mais materiais que podem te ajudar.</p>
           </div>
 
           <!-- Card 3 -->
-          <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300 text-center">
+          <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition duration-300 text-center">
             <a href="dicas.html" class="text-xl font-semibold text-blue-700 mb-2 block">Dicas</a>
             <p>Indicação de ferramentas úteis, sites, bibliografias e boas práticas para o dia a dia do BTI.</p>
           </div>
@@ -87,20 +114,17 @@
       </div>
     </section>
 
-
-    <!-- Eventos -->
     <section id="eventos" class="py-16 px-4">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">Eventos</h2>
         <ul class="space-y-4">
-          <li class="bg-white p-4 rounded-lg shadow">
+          <li class="bg-white p-4 rounded-lg shadow text-center">
             <strong>Em breve:</strong> Amostra do PES
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- Contato -->
     <section id="contato" class="py-16 bg-white px-4">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-blue-700 mb-6">Entre em contato</h2>
@@ -118,19 +142,17 @@
       </div>
     </section>
 
-    <!-- Formulario -->
     <section id="formulario" class="py-16 px-4">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-blue-700 mb-6">Preencha nosso formulário!</h2>
         <p class="mb-4">Assim podemos te ajudar melhor.</p>
         <a href="https://forms.gle/v294dpy3zwAKd2H26"
-            class="inline-block bg-blue-600 hover:bg-blue-900 text-white font-semibold py-2 px-6 rounded-full transition">
-            Formulário
-          </a>
+          class="inline-block bg-blue-600 hover:bg-blue-900 text-white font-semibold py-2 px-6 rounded-full transition">
+          Formulário
+        </a>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center py-6 mt-16">
       <p>Tutoria IMD - 2025</p>
     </footer>
