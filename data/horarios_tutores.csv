@@ -1,9 +1,3 @@
-Horário,Segunda,Terça,Quarta,Quinta,Sexta,Sábado
-M12,,,,,,
-M34,"Emilly Miller, Pedro",,Pedro,,"Lucas, Filipe, Pedro, Sarah","Francisca, Thiago, Flawbert, Pedro"
-M56,Emilly Beatriz,"Filipe, Thiago",,"Filipe, Thiago","Lucas, Emilly Miller, Filipe, Sarah","Francisca, Thiago, Flawbert, Pedro"
-T12,"Emilly Miller, Dinorah, Flawbert, Joadson, Emilly Beatriz","Lucas, Emilly Miller, Dinorah, Filipe, Francisca, Thiago, Flawbert, Joadson, Emilly Beatriz",Joadson,Thiago,Thiago,
-T34,,,,,,
-T56,"Emilly Beatriz, Sarah","Emilly Miller, Dinorah, Filipe, Francisca, Flawbert, Joadson, Emilly Beatriz, Sarah","Lucas, Flawbert, Emilly Beatriz, Sarah","Lucas, Emilly Miller, Dinorah, Filipe, Francisca, Flawbert, Emilly Beatriz, Sarah","Ramon, Flawbert",
-N12,"Emilly Miller, Ramon, Flawbert","Filipe, Joadson, Pedro","Emilly Miller, Ramon, Flawbert","Dinorah, Filipe, Francisca, Flawbert","Emilly Miller, Ramon, Flawbert",
-N34,,,,,,
+Tutor,Dia,Horário,Local
+Thiago, Terça, T12, A definir
+Thiago, Quinta, T12, A definir
