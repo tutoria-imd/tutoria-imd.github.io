@@ -33,11 +33,11 @@
       
             <!-- Menu de Links -->
             <div id="menu" class="hidden md:flex space-x-4 flex-col md:flex-row md:items-center bg-blue-900 md:bg-transparent p-4 md:p-0 absolute md:static top-full left-0 w-full md:w-auto z-50">
-              <a href="#sobre" class="hover:text-blue-200 transition duration-150 ease-in-out">Sobre</a>
-              <a href="#ajuda" class="hover:text-blue-200 transition duration-150 ease-in-out">Ajuda</a>
-              <a href="#eventos" class="hover:text-blue-200 transition duration-150 ease-in-out">Eventos</a>
-              <a href="#contato" class="hover:text-blue-200 transition duration-150 ease-in-out">Contato</a>
-              <a href="#formulario" class="hover:text-blue-200 transition duration-150 ease-in-out">Formulário</a>
+              <a href="#sobre" class="relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Sobre</a>
+              <a href="#ajuda" class="relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Ajuda</a>
+              <a href="#eventos" class="relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Eventos</a>
+              <a href="#contato" class="relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Contato</a>
+              <a href="#formulario" class="relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Formulário</a>
             </div>
 
             <div class="relative md:hidden flex items-center">
@@ -79,11 +79,11 @@
               oferecendo suporte técnico, pedagógico e emocional que facilite a adaptação ao ensino superior e
               contribua para o sucesso acadêmico e a permanência estudantil.
             </p>
-            <p>Veja mais:</p>
-            <a href="https://drive.google.com/file/d/10BARb36Meem1-81ZZEF8bDv3PqQF2khM/view?usp=drive_link"
-              target="_blank" class="inline-block text-white underline hover:text-blue-200 transition">
-              Apresentação do programa
-            </a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a href="https://drive.google.com/file/d/10BARb36Meem1-81ZZEF8bDv3PqQF2khM/view?usp=drive_link" target="_blank" class="bg-transparent border-2 border-blue-400 hover:bg-blue-400/20 text-blue-200 font-bold py-3 px-8 rounded-lg transition-all duration-300">
+                  Ver Apresentação
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -93,20 +93,21 @@
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">Como podemos te ajudar?</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
           <!-- Card 1 -->
-          <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition duration-300 text-center">
+          <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg hover:scale-105 transition duration-300 text-center">
             <a href="atendimento.html" class="text-xl font-semibold text-blue-700 mb-2 block">Atendimento</a>
             <p>Veja os horários para tirar dúvidas sobre o BTI com os tutores ou faça um agendamento.</p>
           </div>
 
           <!-- Card 2 -->
-          <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition duration-300 text-center">
+          <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg hover:scale-105 transition duration-300 text-center">
             <a href="materiais.html" class="text-xl font-semibold text-blue-700 mb-2 block">Materiais</a>
             <p>Tutorias, guias e mais materiais que podem te ajudar.</p>
           </div>
 
           <!-- Card 3 -->
-          <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition duration-300 text-center">
+          <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg hover:scale-105 transition duration-300 text-center">
             <a href="dicas.html" class="text-xl font-semibold text-blue-700 mb-2 block">Dicas</a>
             <p>Indicação de ferramentas úteis, sites, bibliografias e boas práticas para o dia a dia do BTI.</p>
           </div>
