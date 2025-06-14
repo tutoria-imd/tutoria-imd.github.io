@@ -4,7 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tutoria IMD</title>
+    <meta name="description" content="Site da Tutoria do IMD. Apoio técnico, pedagógico e emocional para ingressantes do BTI.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Poppins', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+ 
+    <link rel="stylesheet" href="css/style.css">
+    
   </head>
 
   <body class="bg-gray-50 text-gray-800">
@@ -49,43 +70,13 @@
     </div>
 
     <!-- Seção de Materiais -->
-    <section class="py-16 px-4 bg-white">
+    <section id="ajuda" class="py-16 bg-white px-4">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center text-blue-700 mb-10">Informação</h2>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Card 1 -->
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
-            <a href="https://drive.google.com/file/d/1hiGpnJmA2rIKZXN_oYs2mAZ8a4GY-7Qw/view?usp=drive_link" target="_blank">
-              <h3 class="text-xl font-semibold text-blue-700 mb-2">Como funciona o cálculo de notas da UFRN?</h3>
-              <p class="text-gray-600 text-sm mb-4">
-                Entenda os conceitos de médias, avaliações e aprovação.
-              </p>
-            </a>
-          </div>
+        <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">Informação</h2>
 
-          <!-- Card 2 -->
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
-            <a href="https://drive.google.com/file/d/1lJT9Qa3q1UurpTWmSCU-uBCy6JMhVKRJ/view?usp=drive_link" target="_blank">
-              <h3 class="text-xl font-semibold text-blue-700 mb-2">Atividade Curricular Complementar</h3>
-              <p class="text-gray-600 text-sm mb-4">
-                O que são e como cadastrar no SIGAA. 
-              </p>
-            </a>
-          </div>
+        <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
-          <!-- Card 3 -->
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
-            <a href="https://drive.google.com/file/d/1om7tJmmUGHkuGdCe6euSg9fs2KhUmzmR/view?usp=drive_link" target="_blank">
-              <h3 class="text-xl font-semibold text-blue-700 mb-2">Grade curricular, ênfase e 2° ciclo</h3>
-              <p class="text-gray-600 text-sm mb-4">
-                Entenda como funciona.
-              </p>
-            </a>
-          </div>
-
-        
-        </div>
+        <script src="js/materiais.js"></script>
       </div>
     </section>
 
@@ -96,4 +87,6 @@
     </footer>
 
   </body>
+
+  
 </html>
