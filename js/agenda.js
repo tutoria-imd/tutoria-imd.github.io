@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             : `<strong>Em breve:</strong> ${titulo}`;
   
           if (link && link.trim()) {
-            conteudo += `<br><a href="${link.trim()}" target="_blank" class="inline-block mt-2 text-blue-600 hover:underline">Ver mais</a>`;
+            conteudo += `<br><a href="${link.trim()}" target="_blank" class="inline-block mt-2 text-blue-600">Ver mais</a>`;
           }
   
           li.innerHTML = conteudo;
