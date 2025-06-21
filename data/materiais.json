@@ -1,11 +1,11 @@
 [
-    {
-        "titulo": "Apresentação Institucional",
-        "descricao": "conheça um pouco das nossas ações acadêmicas e da estrutura empreendedora do Metrópole Parque. ",
-        "link": "https://www.youtube.com/watch?v=tftFc7H1qDk",
-        "tags": ["Vídeo"]
-    },
-    {
+  {
+    "titulo": "Apresentação Institucional",
+    "descricao": "conheça um pouco das nossas ações acadêmicas e da estrutura empreendedora do Metrópole Parque. ",
+    "link": "https://www.youtube.com/watch?v=tftFc7H1qDk",
+    "tags": ["Vídeo"]    
+  },
+  {
     "titulo": "Grade curricular",
     "descricao": "Ênfase e 2° ciclo: entenda como funciona",
     "link": "https://drive.google.com/uc?export=download&id=1om7tJmmUGHkuGdCe6euSg9fs2KhUmzmR",
@@ -21,6 +21,12 @@
     "titulo": "Atividade Curricular Complementar",
     "descricao": "O que são e como cadastrar no SIGAA",
     "link": "https://drive.google.com/uc?export=download&id=1lJT9Qa3q1UurpTWmSCU-uBCy6JMhVKRJ",
+    "tags": ["Guia"]
+  },
+  {
+    "titulo": "eXtreme Go Horse",
+    "descricao": "Um guia que NÃO deve ser seguido",
+    "link": "https://gohorse.com.br/extreme-go-horse-xgh.html",
     "tags": ["Guia"]
   }
 ]
