@@ -8,5 +8,10 @@
     "titulo": "Portal das Disciplinas",
     "descricao": "Cada disciplina aqui conta com entrevistas, informações, materiais, indicação de dificuldades e muito mais sobre componentes curriculares do Bacharelado em TI do IMD/UFRN.",
     "link": "https://portaldasdisciplinas.imd.ufrn.br/"
+  },
+  {
+    "titulo": "eXtreme Go Horse",
+    "descricao": "Um guia que NÃO deve ser seguido",
+    "link": "https://gohorse.com.br/extreme-go-horse-xgh.html"
   }
 ]
