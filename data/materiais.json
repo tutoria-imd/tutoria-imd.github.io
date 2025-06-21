@@ -1,17 +1,26 @@
 [
-  {
+    {
+        "titulo": "Apresentação Institucional",
+        "descricao": "conheça um pouco das nossas ações acadêmicas e da estrutura empreendedora do Metrópole Parque. ",
+        "link": "https://www.youtube.com/watch?v=tftFc7H1qDk",
+        "tags": ["Vídeo"]
+    },
+    {
     "titulo": "Grade curricular",
     "descricao": "Ênfase e 2° ciclo: entenda como funciona",
-    "link": "https://drive.google.com/uc?export=download&id=1om7tJmmUGHkuGdCe6euSg9fs2KhUmzmR"
+    "link": "https://drive.google.com/uc?export=download&id=1om7tJmmUGHkuGdCe6euSg9fs2KhUmzmR",
+    "tags": ["Texto"]
   },
   {
     "titulo": "Como funciona o cálculo de notas da UFRN?",
     "descricao": "Entenda os conceitos de médias, avaliações e aprovação",
-    "link": "https://drive.google.com/uc?export=download&id=1hiGpnJmA2rIKZXN_oYs2mAZ8a4GY-7Qw"
+    "link": "https://drive.google.com/uc?export=download&id=1hiGpnJmA2rIKZXN_oYs2mAZ8a4GY-7Qw",
+    "tags": ["Guia"]
   },
   {
     "titulo": "Atividade Curricular Complementar",
     "descricao": "O que são e como cadastrar no SIGAA",
-    "link": "https://drive.google.com/uc?export=download&id=1lJT9Qa3q1UurpTWmSCU-uBCy6JMhVKRJ"
+    "link": "https://drive.google.com/uc?export=download&id=1lJT9Qa3q1UurpTWmSCU-uBCy6JMhVKRJ",
+    "tags": ["Guia"]
   }
 ]
