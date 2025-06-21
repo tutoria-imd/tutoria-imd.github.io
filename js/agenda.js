@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
           : `<strong>Em breve:</strong> ${item.titulo}`;
 
         if (item.link && item.link.trim()) {
-          conteudo += `<br><a href="${item.link.trim()}" target="_blank" class="inline-block mt-2 text-blue-600">Ver mais</a>`;
+          conteudo += `<br><a href="${item.link.trim()}" target="_blank" class="inline-block mt-4 px-4 py-1 bg-white text-gray-700 text-sm font-semibold rounded-md border border-gray-300 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300 ease-in-out">Ver mais</a>`;
         }
 
         li.innerHTML = conteudo;
