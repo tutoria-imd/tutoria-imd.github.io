@@ -30,6 +30,7 @@ pnpm run build
 
 Isso vai gerar o arquivo dist/output.css, que é o CSS minificado com apenas os estilos utilizados no projeto.
 
+
 ## Publicação
 
 O site está hospedado no GitHub Pages.
