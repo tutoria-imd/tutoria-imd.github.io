@@ -37,7 +37,7 @@ fetch('data/horarios_tutores.csv')
           thead.className = 'bg-blue-100 text-blue-900 font-semibold';
           const headerRow = document.createElement('tr');
 
-          const headers = Object.keys(dadosFiltrados[0]).slice(1);
+          const headers = Object.keys(dadosFiltrados[0]).slice(1, -1);
           headers.forEach(header => {
             const th = document.createElement('th');
             th.textContent = header;
@@ -54,7 +54,7 @@ fetch('data/horarios_tutores.csv')
             const tr = document.createElement('tr');
             tr.className = rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50';
 
-            const values = Object.values(row).slice(1);
+            const values = Object.values(row).slice(1, -1);
             values.forEach(value => {
               const td = document.createElement('td');
               td.textContent = value;
