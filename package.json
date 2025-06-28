@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss src/input.css -o dist/output.css",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "postcss post/input.css -o dist/output.css",
+    "build": "tailwindcss -i ./post/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./post/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
