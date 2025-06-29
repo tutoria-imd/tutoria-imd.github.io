@@ -1,26 +1,20 @@
 [
   {
     "titulo": "Apresentação Institucional",
-    "descricao": "conheça um pouco das nossas ações acadêmicas e da estrutura empreendedora do Metrópole Parque. ",
+    "descricao": "Conheça um pouco das nossas ações acadêmicas e da estrutura empreendedora do Metrópole Parque. ",
     "link": "https://www.youtube.com/watch?v=tftFc7H1qDk",
     "tags": ["Vídeo"]    
   },
   {
-    "titulo": "Grade curricular",
+    "titulo": "Mapa UFRN",
+    "descricao": "",
+    "link": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi4urqY1JWOAxUNLLkGHVgEEzIQFnoECCgQAQ&url=https%3A%2F%2Fwww.ufrn.br%2Fresources%2Fdocumentos%2FMapa%2520do%2520Campus%2520Central%2520-%2520Natal%2520RN.pdf&usg=AOvVaw1uxHabj0jPpAUj0BCAUP5Z&opi=89978449",
+    "tags": ["Imagem"]    
+  },
+  {
+    "titulo": "Estrutura curricular, ênfase e 2° cíclo",
     "descricao": "Ênfase e 2° ciclo: entenda como funciona",
-    "link": "https://drive.google.com/uc?export=download&id=1om7tJmmUGHkuGdCe6euSg9fs2KhUmzmR",
-    "tags": ["Texto"]
-  },
-  {
-    "titulo": "Como funciona o cálculo de notas da UFRN?",
-    "descricao": "Entenda os conceitos de médias, avaliações e aprovação",
-    "link": "https://drive.google.com/uc?export=download&id=1hiGpnJmA2rIKZXN_oYs2mAZ8a4GY-7Qw",
-    "tags": ["Guia"]
-  },
-  {
-    "titulo": "Atividade Curricular Complementar",
-    "descricao": "O que são e como cadastrar no SIGAA",
-    "link": "https://drive.google.com/uc?export=download&id=1lJT9Qa3q1UurpTWmSCU-uBCy6JMhVKRJ",
+    "link": "/materiais/Estrutura curricular, ênfase e 2° ciclo.pdf",
     "tags": ["Guia"]
   }
 ]
