@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
         card.setAttribute("data-aos-delay", `${100 + index * 50}`);
 
         card.innerHTML = `
-          <a href="${item.link}" target="_blank">
-              <h3 class="text-xl font-semibold text-blue-700 mb-2">${item.titulo}</h3>
-              <p class="text-gray-600 text-sm mb-4">${item.descricao}</p>
+          <a href="${item.link}" target="_blank" rel="noopener noreferrer">
+              <h3 class="text-2xl font-bold text-blue-800 mb-3">${item.titulo}</h3>
+              <p class="text-gray-700 text-base leading-relaxed">${item.descricao || 'Nenhuma descrição disponível.'}</p>
           </a>
         `;
 

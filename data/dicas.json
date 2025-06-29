@@ -1,17 +1,42 @@
 [
-    {
-    "titulo": "Jerimum Jobs",
-    "descricao": "Este site serve para conectar profissionais com as empresas credenciadas no Parque Tecnológico Metrópole Digital.",
-    "link": "https://jerimumjobs.imd.ufrn.br/jerimumjobs/"
-  },
   {
     "titulo": "Portal das Disciplinas",
-    "descricao": "Cada disciplina aqui conta com entrevistas, informações, materiais, indicação de dificuldades e muito mais sobre componentes curriculares do Bacharelado em TI do IMD/UFRN.",
+    "descricao": "Recurso essencial com entrevistas, materiais e informações sobre componentes curriculares do Bacharelado em TI do IMD/UFRN para aprofundar conhecimentos.",
     "link": "https://portaldasdisciplinas.imd.ufrn.br/"
   },
   {
-    "titulo": "eXtreme Go Horse",
-    "descricao": "Um guia que NÃO deve ser seguido",
-    "link": "https://gohorse.com.br/extreme-go-horse-xgh.html"
+    "titulo": "Site da disciplina Matemática Elementar",
+    "descricao": "Acesso a materiais de estudo e horários de monitoria para Matemática Elementar, oferecendo suporte para dominar os conceitos.",
+    "link": "https://matematica-elementar.github.io/"
+  },
+  {
+    "titulo": "Site do projeto de monitoria de FMC",
+    "descricao": "Materiais didáticos e horários de monitoria para Fundamentos de Ciência da Computação (FMC), para suporte no aprendizado.",
+    "link": "https://fmc.imd.ufrn.br/"
+  },
+  {
+    "titulo": "Escola do Governo",
+    "descricao": "Plataforma abrangente para formação continuada, graduação, pós-graduação, cursos de extensão e programas de estágio.",
+    "link": "http://www.escoladegoverno.rn.gov.br/"
+  },
+  {
+    "titulo": "Jerimum Jobs",
+    "descricao": "Conecta profissionais com empresas credenciadas no Parque Tecnológico Metrópole Digital, facilitando a busca por oportunidades de trabalho.",
+    "link": "https://jerimumjobs.imd.ufrn.br/jerimumjobs/"
+  },
+  {
+    "titulo": "LeerCode",
+    "descricao": "Plataforma online com problemas de programação para prática e aprimoramento de habilidades algorítmicas, ideal para entrevistas técnicas.",
+    "link": "https://leetcode.com/"
+  },
+  {
+    "titulo": "TailwindCSS",
+    "descricao": "Framework CSS utilitário-first para construir designs personalizados rapidamente com classes de baixo nível no HTML.",
+    "link": "https://tailwindcss.com/"
+  },
+  {
+    "titulo": "Github",
+    "descricao": "Plataforma de hospedagem de código para controle de versão e colaboração usando Git, essencial para desenvolvedores e projetos.",
+    "link": "https://github.com/"
   }
 ]
