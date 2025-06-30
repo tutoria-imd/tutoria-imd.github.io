@@ -8,9 +8,9 @@ Este site busca ser uma plataforma informativa para ajudar os tutorados, oferece
 
 ## Tecnologias usadas
 
-- **Tailwind CSS**: framework CSS utilitário para estilização rápida e responsiva  
-- **PostCSS + Autoprefixer**: processamento do CSS gerado para garantir otimização
-- **PNPM**: gerenciador de pacotes para instalação das dependências  
+- **Tailwind CSS**: framework CSS utilitário para estilização rápida e responsiva;
+- **PostCSS + Autoprefixer**: processamento do CSS gerado para garantir otimização;
+- **PNPM**: gerenciador de pacotes para instalação das dependências.
 
 ## Como usar este projeto localmente
 
@@ -18,20 +18,18 @@ Este site busca ser uma plataforma informativa para ajudar os tutorados, oferece
 
 ```
 pnpm install
-
 ```
 
 ### 2. Gere o CSS compilado do Tailwind
 
 ```
-pnpm run build
-
+pnpm build
 ```
 
 Isso vai gerar o arquivo dist/output.css, que é o CSS minificado com apenas os estilos utilizados no projeto.
 
-
 ## Publicação
 
 O site está hospedado no GitHub Pages.
-Importante: o GitHub Pages não compila o Tailwind automaticamente, então o CSS deve ser gerado localmente e comitado junto ao código.
+
+> O GitHub Pages não compila o Tailwind automaticamente, então o CSS deve ser gerado localmente e comitado junto ao código.

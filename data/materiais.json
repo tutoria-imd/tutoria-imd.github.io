@@ -6,14 +6,14 @@
     "tags": ["Vídeo"]    
   },
   {
-  "titulo": "Mapa UFRN",
+  "titulo": "Mapa da UFRN",
   "descricao": "Visualize o mapa completo do Campus Central da UFRN em Natal e facilite sua localização dentro da universidade.",
   "link": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi4urqY1JWOAxUNLLkGHVgEEzIQFnoECCgQAQ&url=https%3A%2F%2Fwww.ufrn.br%2Fresources%2Fdocumentos%2FMapa%2520do%2520Campus%2520Central%2520-%2520Natal%2520RN.pdf&usg=AOvVaw1uxHabj0jPpAUj0BCAUP5Z&opi=89978449",
   "tags": ["Imagem"]
   },
   {
-    "titulo": "Estrutura curricular, ênfase e 2° cíclo",
-    "descricao": "Ênfase e 2° ciclo: entenda como funciona",
+    "titulo": "Estrutura curricular do curso, ênfases e 2° cíclo",
+    "descricao": "Descubra a diferença entre ênfase e 2° cíclo, quais as disciplinas você encontrar em sua jornada e muito mais!",
     "link": "/materiais/Estrutura curricular, ênfase e 2° ciclo.pdf",
     "tags": ["Guia"]
   }

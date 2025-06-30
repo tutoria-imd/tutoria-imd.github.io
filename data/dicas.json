@@ -5,6 +5,21 @@
     "link": "https://portaldasdisciplinas.imd.ufrn.br/"
   },
   {
+    "titulo": "Portal do IMD",
+    "descricao": "Portal oficial do IMD que agrega informações sobre novos editais, eventos, projetos e empreendedorismo na área.",
+    "link": "https://www.metropoledigital.ufrn.br/portal/"
+  },
+  {
+    "titulo": "Escola do Governo",
+    "descricao": "Plataforma abrangente para formação continuada. Para quem busca estágio, se inscrever nesta plataforma é uma boa ideia!",
+    "link": "http://www.escoladegoverno.rn.gov.br/"
+  },
+  {
+    "titulo": "Jerimum Jobs",
+    "descricao": "Conecta profissionais com empresas credenciadas no Parque Tecnológico Metrópole Digital, facilitando a busca por oportunidades de trabalho.",
+    "link": "https://jerimumjobs.imd.ufrn.br/jerimumjobs/"
+  },
+  {
     "titulo": "Site da disciplina Matemática Elementar",
     "descricao": "Acesso a materiais de estudo e horários de monitoria para Matemática Elementar, oferecendo suporte para dominar os conceitos.",
     "link": "https://matematica-elementar.github.io/"
@@ -15,17 +30,7 @@
     "link": "https://fmc.imd.ufrn.br/"
   },
   {
-    "titulo": "Escola do Governo",
-    "descricao": "Plataforma abrangente para formação continuada, graduação, pós-graduação, cursos de extensão e programas de estágio.",
-    "link": "http://www.escoladegoverno.rn.gov.br/"
-  },
-  {
-    "titulo": "Jerimum Jobs",
-    "descricao": "Conecta profissionais com empresas credenciadas no Parque Tecnológico Metrópole Digital, facilitando a busca por oportunidades de trabalho.",
-    "link": "https://jerimumjobs.imd.ufrn.br/jerimumjobs/"
-  },
-  {
-    "titulo": "LeerCode",
+    "titulo": "LeetCode",
     "descricao": "Plataforma online com problemas de programação para prática e aprimoramento de habilidades algorítmicas, ideal para entrevistas técnicas.",
     "link": "https://leetcode.com/"
   },

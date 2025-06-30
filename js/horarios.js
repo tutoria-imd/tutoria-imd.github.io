@@ -30,7 +30,7 @@ fetch('data/horarios_tutores.csv')
           if (dadosFiltrados.length === 0) return;
 
           const table = document.createElement('table');
-          table.className = 'min-w-full table-auto border border-gray-300 shadow-sm text-sm';
+          table.className = 'rounded-md min-w-full table-auto border border-gray-300 shadow-sm text-sm';
 
           // Cabeçalho 
           const thead = document.createElement('thead');
