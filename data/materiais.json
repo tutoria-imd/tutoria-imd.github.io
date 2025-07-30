@@ -16,5 +16,17 @@
     "descricao": "Descubra a diferença entre ênfase e 2° cíclo, quais as disciplinas você encontrar em sua jornada e muito mais!",
     "link": "/materiais/Estrutura curricular, ênfase e 2° ciclo.pdf",
     "tags": ["Guia"]
+  },
+  {
+    "titulo": "Matrículas e Influência dos Índices",
+    "descricao": "Entenda os tipos de matrícula, planejamento, critérios de prioridade, o Índice de Eficiência Acadêmica (IEA) e suas implicações, além de informações sobre cancelamento e trancamento.",
+    "link": "/materiais/Matrículas e Influência dos Índices.pdf",
+    "tags": ["Guia"]
+  },
+  {
+    "titulo": "Se preparando para as matrículas",
+    "descricao": "Receba conselhos e orientações para otimizar sua matrícula, incluindo como usar o SIGAA e entender os critérios de prioridade.",
+    "link": "https://www.youtube.com/watch?v=7VpJfuRjvp4",
+    "tags": ["Vídeo"]
   }
 ]
