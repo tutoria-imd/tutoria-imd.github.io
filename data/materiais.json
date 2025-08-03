@@ -34,5 +34,11 @@
     "descricao": "Aprenda o passo a passo para fazer sua matrícula online no SIGAA, incluindo como adicionar e remover turmas, entender as diferenças entre os períodos de matrícula e verificar a situação das solicitações.",
     "link": "https://www.youtube.com/watch?v=Zw8kx3bMBQw",
     "tags": ["Vídeo"]
+  },
+  {
+    "titulo": "Manual de Sobrevivência (Não Oficial) da Disciplina de Fundamentos Matemáticos da Computação I (FMC1) com Thanos",
+    "descricao": "Guia não oficial para a disciplina de FMC1, feito por ex-monitores do professor Thanos, abordando o método de ensino, estratégias de estudo, recursos de apoio e dicas gerais sobre os módulos e avaliações.",
+    "link": "/materiais/Manual de sobrevivência _não oficial_ da disciplina de Fundamentos Matemáticos da Computação I com Thanos.pdf",
+    "tags": ["Guia", "FMC1"]
   }
 ]
