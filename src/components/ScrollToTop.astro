@@ -1,0 +1,33 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { Icon } from "astro-icon/components";
+interface Props extends HTMLAttributes<"button"> {}
+const { class: className, ...props } = Astro.props;
+---
+
+<button
+  id="to-top-button"
+  aria-label="Voltar ao topo"
+  aria-disabled="true"
+  class:list={[
+    "fixed bottom-5 right-5 bg-blue-800 text-white p-3 rounded-full",
+    "shadow hover:shadow-lg hover:scale-110 transition duration-300 z-50",
+    "aria-disabled:hidden",
+    className,
+  ]}
+  {...props}
+>
+  <Icon name="arrow-top" />
+</button>
+<script>
+  const button = document.getElementById("to-top-button");
+  if (button) {
+    window.addEventListener("scroll", () => {
+      button.ariaDisabled = `${window.scrollY <= 100}`;
+    });
+
+    button.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+</script>

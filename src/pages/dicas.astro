@@ -1,0 +1,21 @@
+---
+import Hero from "@components/Hero.astro";
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@layouts/Navbar.astro";
+import Card from "@components/Card.astro";
+import { tips } from "./data";
+---
+
+<Layout>
+  <Navbar slot="navbar" />
+  <Hero slot="hero" title="Ferramentas e dicas" description="Ferramentas úteis, sites, bibliografias e boas práticas." />
+  <main slot="main">
+    <section class="max-w-6xl mx-auto py-12 px-4">
+      <div
+        class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        {tips.map((card) => <Card card={card}/>)}
+      </div>
+    </section>
+  </main>
+</Layout>

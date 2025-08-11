@@ -1,0 +1,47 @@
+---
+import type { Link } from "@pages/data";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  links: Link[];
+}
+
+const { links = [] } = Astro.props;
+---
+
+<details id="mobile-menu" class="relative md:hidden flex items-center">
+  <summary
+    class:list={[
+      "list-none cursor-pointer",
+      "inline-flex items-center justify-center p-2 rounded-md text-white",
+      "hover:text-gray-400 focus:outline-none focus:ring-2",
+      "focus:ring-inset focus:ring-white",
+    ]}
+  >
+    <Icon name="menu" />
+  </summary>
+  <div
+    class:list={[
+      "absolute top-10 right-0 z-10 mt-2 w-48 origin-top-right",
+      "rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5",
+      "focus:outline-none",
+    ]}
+  >
+    <div class="py-1" role="menu" aria-orientation="vertical">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "text-gray-700 hover:bg-gray-100",
+              "block px-4 py-2 text-sm",
+            ]}
+            role="menuitem"
+          >
+            {link.title}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</details>

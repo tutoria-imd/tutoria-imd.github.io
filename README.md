@@ -1,35 +1,46 @@
-# Tutoria IMD
+# Astro Starter Kit: Basics
 
-A Tutoria é um projeto que busca promover a integração acadêmica e social dos ingressantes do BTI, oferecendo suporte técnico, pedagógico e emocional que facilite a adaptação ao ensino superior e contribua para o sucesso acadêmico e a permanência estudantil.
-
-## Site
-
-Este site busca ser uma plataforma informativa para ajudar os tutorados, oferecendo informações sobre atendimentos, materiais de apoio, dicas, eventos e contato.
-
-## Tecnologias usadas
-
-- **Tailwind CSS**: framework CSS utilitário para estilização rápida e responsiva;
-- **PostCSS + Autoprefixer**: processamento do CSS gerado para garantir otimização;
-- **PNPM**: gerenciador de pacotes para instalação das dependências.
-
-## Como usar este projeto localmente
-
-### 1. Instale as dependências
-
-```
-pnpm install
+```sh
+pnpm create astro@latest -- --template basics
 ```
 
-### 2. Gere o CSS compilado do Tailwind
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src
+│   ├── assets
+│   │   └── astro.svg
+│   ├── components
+│   │   └── Welcome.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
+└── package.json
 ```
-pnpm build
-```
 
-Isso vai gerar o arquivo dist/output.css, que é o CSS minificado com apenas os estilos utilizados no projeto.
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## Publicação
+## 🧞 Commands
 
-O site está hospedado no GitHub Pages.
+All commands are run from the root of the project, from a terminal:
 
-> O GitHub Pages não compila o Tailwind automaticamente, então o CSS deve ser gerado localmente e comitado junto ao código.
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm preview`         | Preview your build locally, before deploying     |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

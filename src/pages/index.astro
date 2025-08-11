@@ -1,0 +1,45 @@
+---
+import About from "@components/About.astro";
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@layouts/Navbar.astro";
+import Section from "@layouts/Section.astro";
+import Card from "@components/Card.astro";
+import { anchors, cards, contacts, feedback } from "./data";
+import LinkButton from "@components/LinkButton.astro";
+---
+
+<Layout>
+  <Navbar slot="navbar" links={anchors} />
+  <About slot="hero" />
+  <main slot="main">
+    <Section
+      id="ajuda"
+      title="Como podemos te ajudar?"
+      description=""
+      class="bg-white"
+    >
+      <div
+        class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:max-w-5xl gap-6"
+      >
+        {cards.map((card) => <Card card={card} />)}
+      </div>
+    </Section>
+    <Section
+      id="contato"
+      title="Entre em contato"
+      description="Quer saber mais ou precisa de ajuda? Fale com a gente!"
+    >
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        {contacts.map((link) => <LinkButton link={link} />)}
+      </div>
+    </Section>
+    <Section
+      id="feedback"
+      title="Deixe seu feedback!"
+      description="Sua opinião é muito importante para nós!"
+      class="bg-white"
+    >
+      <LinkButton link={feedback} />
+    </Section>
+  </main>
+</Layout>
