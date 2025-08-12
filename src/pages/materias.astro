@@ -1,0 +1,29 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@layouts/Navbar.astro";
+import { materials } from "./data";
+import Hero from "@components/Hero.astro";
+import Materials from "@components/Materials";
+
+const tags = Array.from(materials.reduce((prev, curr) => {
+  curr.tags?.forEach((tag) => prev.add(tag));
+  return prev;
+}, new Set<string>(["Todos"])).values());
+---
+
+<Layout
+  title="Materias de apoio",
+  description="Materiais de apoio que achamos que podem ser úteis para os estudantes do BTI na UFRN."
+>
+  <Navbar slot="navbar" />
+  <Hero
+    slot="hero"
+    title="Materias de apoio"
+    description="Deixamos aqui alguns materiais de apoio que achamos que podem ser úteis."
+  />
+  <main slot="main">
+    <section class="max-w-6xl mx-auto py-12 px-4">
+      <Materials client:load tags={tags} materials={materials}/>
+    </section>
+  </main>
+</Layout>

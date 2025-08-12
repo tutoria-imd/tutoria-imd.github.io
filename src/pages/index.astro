@@ -1,0 +1,41 @@
+---
+import About from "@components/About.astro";
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@layouts/Navbar.astro";
+import Section from "@layouts/Section.astro";
+import { anchors, cards, contacts, feedback } from "./data";
+import LinkButton from "@components/LinkButton.astro";
+import { Card } from "@components/Card";
+---
+
+<Layout
+  title="Tutoria IMD",
+  description="Suporte acadêmico, técnico, pedagógico e emocional para estudantes ingressantes do BTI na UFRN."
+>
+  <Navbar slot="navbar" links={anchors} />
+  <About slot="hero" />
+  <main slot="main">
+    <Section id="ajuda" title="Como podemos te ajudar?" description="">
+      <div class="mx-auto columns-1 md:columns-2 gap-6 lg:max-w-5xl -mb-6">
+        {cards.map((card) => <Card client:load card={card} />)}
+      </div>
+    </Section>
+    <Section
+      id="contato"
+      title="Entre em contato"
+      description="Quer saber mais ou precisa de ajuda? Fale com a gente!"
+      class="bg-white"
+    >
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        {contacts.map((link) => <LinkButton link={link} />)}
+      </div>
+    </Section>
+    <Section
+      id="feedback"
+      title="Deixe seu feedback!"
+      description="Sua opinião é muito importante para nós!"
+    >
+      <LinkButton link={feedback} />
+    </Section>
+  </main>
+</Layout>

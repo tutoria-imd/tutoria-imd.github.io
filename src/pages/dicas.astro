@@ -1,0 +1,26 @@
+---
+import Hero from "@components/Hero.astro";
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@layouts/Navbar.astro";
+import { tips } from "./data";
+import { Card } from "@components/Card";
+---
+
+<Layout
+  title="Ferramentas e dicas",
+  description="Ferramentas úteis, sites, bibliografias e boas práticas que achamos que podem ser úteis para os estudantes do BTI na UFRN."
+>
+  <Navbar slot="navbar" />
+  <Hero
+    slot="hero"
+    title="Ferramentas e dicas"
+    description="Ferramentas úteis, sites, bibliografias e boas práticas."
+  />
+  <main slot="main">
+    <section class="max-w-6xl mx-auto py-12 px-4">
+      <div class="mx-auto columns-1 md:columns-2 gap-6">
+        {tips.map((card) => <Card client:load card={card} />)}
+      </div>
+    </section>
+  </main>
+</Layout>

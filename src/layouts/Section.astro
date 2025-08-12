@@ -1,0 +1,21 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"section"> {
+  id: string;
+  title: string;
+  description: string;
+}
+
+const { class: className, title, description, id, ...props } = Astro.props;
+---
+
+<section id={id} class:list={["py-16 px-4", className]} {...props}>
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-2">{title}</h2>
+    <p class="mb-4">{description}</p>
+  </div>
+  <div class="mx-auto text-center">
+    <slot />
+  </div>
+</section>
