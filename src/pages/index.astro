@@ -15,7 +15,7 @@ import { Card } from "@components/Card";
   <Navbar slot="navbar" links={anchors} />
   <About slot="hero" />
   <main slot="main">
-    <Section id="ajuda" title="Como podemos te ajudar?" description="">
+    <Section id="ajuda" title="Precisando de ajudar?" description="Temos algums materiais que talvez você queira dar uma olhadinha...">
       <div class="mx-auto columns-1 md:columns-2 gap-6 lg:max-w-5xl -mb-6">
         {cards.map((card) => <Card client:load card={card} />)}
       </div>
