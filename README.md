@@ -29,4 +29,4 @@ pnpm dev
 
 ## Publicação
 
-O site está hospedado no GitHub Pages.
+O site está hospedado no GitHub Pages e é re-compilado a cada alteração na branch principal.
