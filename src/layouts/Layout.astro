@@ -2,6 +2,13 @@
 import "@styles/global.css";
 import ScrollToTop from "@components/ScrollToTop.astro";
 import Footer from "./Footer.astro";
+
+interface Props {
+  title: string;
+  description: string;
+};
+
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -11,7 +18,18 @@ import Footer from "./Footer.astro";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/logo.webp" />
     <meta name="generator" content={Astro.generator} />
-    <title>Tutoria IMD</title>
+    
+    <meta name="keywords" content="Tutoria, BTI, UFRN, IMD, apoio, acadêmico, ingressantes, suporte, pedagógico, emocional, universidade, ensino, superior">
+    <meta name="author" content="Tutoria IMD">
+
+    <title>{title}</title>
+    <meta name="description" content={description}>
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content="https://tutoria-imd.github.io/logo.webp">
+    <meta property="og:url" content="https://tutoria-imd.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tutoria IMD">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

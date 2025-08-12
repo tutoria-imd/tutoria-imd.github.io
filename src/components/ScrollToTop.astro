@@ -1,6 +1,5 @@
 ---
 import type { HTMLAttributes } from "astro/types";
-import { Icon } from "astro-icon/components";
 interface Props extends HTMLAttributes<"button"> {}
 const { class: className, ...props } = Astro.props;
 ---
@@ -12,12 +11,12 @@ const { class: className, ...props } = Astro.props;
   class:list={[
     "fixed bottom-5 right-5 bg-blue-800 text-white p-3 rounded-full",
     "shadow hover:shadow-lg hover:scale-110 transition duration-300 z-50",
-    "aria-disabled:hidden",
+    "aria-disabled:hidden cursor-pointer size-12",
     className,
   ]}
   {...props}
 >
-  <Icon name="arrow-top" />
+  <i class="fas fa-arrow-up"/>
 </button>
 <script>
   const button = document.getElementById("to-top-button");
