@@ -1,4 +1,6 @@
 ---
+import FaBrandsDiscord from "@icons/FaBrandsDiscord.astro";
+import FaSolidEnvelope from "@icons/FaSolidEnvelope.astro";
 import type { Link } from "@pages/data";
 import type { HTMLAttributes } from "astro/types";
 
@@ -8,6 +10,13 @@ interface Props extends HTMLAttributes<"a"> {
 
 const { class: className, link, ...props } = Astro.props;
 const { href, title, icon, target, class: linkClassName } = link;
+
+const icons = {
+  envelope: FaSolidEnvelope,
+  discord: FaBrandsDiscord,
+};
+
+const Icon = icons[icon as keyof typeof icons];
 ---
 
 <a
@@ -22,6 +31,6 @@ const { href, title, icon, target, class: linkClassName } = link;
   ]}
   {...props}
 >
-  {icon && <i class={icon} />}
+  {Icon && <Icon />}
   <span class="whitespace-nowrap">{title}</span>
 </a>

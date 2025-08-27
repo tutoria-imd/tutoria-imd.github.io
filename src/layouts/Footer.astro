@@ -1,3 +1,7 @@
+---
+import Fa6BrandsGithub from "@icons/Fa6BrandsGithub.astro";
+---
+
 <footer
   class:list={[
     "bg-gradient-to-r from-gray-800 to-gray-900 text-white",
@@ -12,7 +16,7 @@
     </h4>
     <p
       class:list={[
-        "text-md not-md:text-sm block md:gap-2",
+        "text-md not-md:text-sm inline-flex md:gap-2",
         "not-md:flex-col text-gray-300 not-md:max-w-2/3",
         "not-md:text-start max-w-1/2",
       ]}
@@ -24,10 +28,10 @@
         rel="noopener noreferrer"
         class:list={[
           "items-center gap-2 text-blue-300 hover:text-blue-200",
-          "transition transform hover:scale-105 inline-block",
+          "transition transform hover:scale-105 inline-flex",
         ]}
       >
-        <i class="fab fa-github"></i> GitHub
+        <Fa6BrandsGithub /> GitHub
       </a>
     </p>
   </div>

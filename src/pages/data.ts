@@ -1,3 +1,7 @@
+import FaRegularHandshake from "@icons/FaRegularHandshake";
+import FaRegularMap from "@icons/FaRegularMap";
+import type React from "react";
+
 export type Link = {
   href: string;
   title: string;
@@ -16,12 +20,12 @@ export const contacts: Link[] = [
   {
     href: "mailto:tutoria@imd.ufrn.br",
     title: "Enviar e-mail",
-    icon: "fas fa-envelope",
+    icon: "envelope",
   },
   {
     href: "https://discord.gg/PcsdAr3R2r",
     title: "Entrar no Discord",
-    icon: "fab fa-discord",
+    icon: "discord",
     target: "_blank",
     class: "bg-indigo-600 hover:bg-indigo-800",
   },
@@ -42,14 +46,14 @@ export const cards: Card[] = [
   {
     href: "/materias",
     title: "Materiais de apoio",
-    icon: "far fa-handshake",
+    icon: "handshake",
     description:
       "Tutorias, guias e mais materiais que podem te ajudar quando você mesmo espera.",
   },
   {
     href: "/dicas",
     title: "Ferramentas e dicas",
-    icon: "far fa-map",
+    icon: "map",
     description:
       "Indicação de ferramentas úteis, sites, bibliografias e boas práticas para o dia a dia do BTI.",
   },
@@ -171,8 +175,7 @@ export const materials: Card[] = [
     target: "_blank",
   },
   {
-    title:
-      "Manual de Sobrevivência de FMC I com Thanos",
+    title: "Manual de Sobrevivência de FMC I com Thanos",
     description:
       "Guia não oficial para a disciplina de FMC I. Feito por ex-monitores do professor, abordando o método de ensino, estratégias de estudo, recursos de apoio e dicas gerais sobre os módulos e avaliações.",
     href: "/documentos/Manual de sobrevivência _não oficial_ da disciplina de Fundamentos Matemáticos da Computação I com Thanos.pdf",

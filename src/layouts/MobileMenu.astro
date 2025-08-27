@@ -1,5 +1,6 @@
 ---
 import type { Link } from "@pages/data";
+import Fa6SolidBars from "@icons/Fa6SolidBars.astro";
 
 interface Props {
   links: Link[];
@@ -17,7 +18,7 @@ const { links = [] } = Astro.props;
       "ring-inset ring-white size-8",
     ]}
   >
-    <i class="fas fa-bars "/>
+    <Fa6SolidBars />
   </summary>
   <div
     class:list={[
